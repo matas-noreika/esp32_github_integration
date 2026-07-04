@@ -15,7 +15,7 @@ const char* ssid     = "Matas ltu";
 const char* password = "matas-ltu";
 
 // Example: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
-const char* url = "https://raw.githubusercontent.com/matas-noreika/esp32_github_integration/main/data.json";
+const char* url = "https://raw.githubusercontent.com/matas-noreika/esp32_github_integration/main/data/images.json";
 
 void setup() {
   Serial.begin(115200);
@@ -33,7 +33,7 @@ void setup() {
   client.setInsecure();  // skip certificate validation
 
   HTTPClient https;
-
+  https.
   Serial.println("Requesting: " + String(url));
 
   if (https.begin(client, url)) {
