@@ -1,9 +1,6 @@
 name: Image Updater
 
 on:
-  schedule:
-    # Runs every 15 mins
-    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
   workflow_dispatch:
 
 permissions:
