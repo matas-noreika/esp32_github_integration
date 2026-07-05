@@ -13,6 +13,10 @@ fi
 # chose random index
 index=$((RANDOM % ${#files[@]}))
 
+while [[ "${files[index]}" == "$(cat ./data/lastfile.txt)" ]]; do
+  index=$((RANDOM % ${#files[@]}))
+done
+
 # debug print the chosen file
 echo "${files[index]}"
 
