@@ -28,7 +28,17 @@ tft display with the image content.
 ### image-data branch
 
 ```Shell
-
+.
+├── data # folder containing all data 
+│   ├── current.csv # main file read by micro-controller
+│   ├── images # Directory of all current available images (subject to change)
+│   │   ├── alien_romulus.csv
+│   │   ├── jaws.csv
+│   │   └── scream.csv
+│   └── lastfile.txt # record entry to prevent repeat image
+└── scripts
+    ├── random_file.sh # main script that gets called by workflow
+    └── test.sh
 ```
 
 ## Image Content Files
