@@ -33,7 +33,6 @@ void setup() {
   client.setInsecure();  // skip certificate validation
 
   HTTPClient https;
-  https.
   Serial.println("Requesting: " + String(url));
 
   if (https.begin(client, url)) {
