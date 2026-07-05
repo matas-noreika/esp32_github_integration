@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="../data/images"
+DIR="./data/images"
 
 # Load all files to an array
 files=("$DIR"/*)
@@ -17,7 +17,7 @@ index=$((RANDOM % ${#files[@]}))
 echo "${files[index]}"
 
 # update the last file
-echo -n "${files[index]}" >../data/lastfile.txt
+echo -n "${files[index]}" >./data/lastfile.txt
 
 # write content to current file
-cat ${file[index]} >../data/current.csv
+cat ${file[index]} >./data/current.csv
