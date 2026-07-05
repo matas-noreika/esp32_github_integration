@@ -20,4 +20,4 @@ echo "${files[index]}"
 echo -n "${files[index]}" >./data/lastfile.txt
 
 # write content to current file
-cat ${file[index]} >./data/current.csv
+cat ${files[index]} >./data/current.csv
