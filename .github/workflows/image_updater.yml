@@ -6,7 +6,7 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
-premissions:
+permissions:
   contents: write
 
 jobs:
