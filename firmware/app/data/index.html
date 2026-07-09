@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h1>ESP32 Image Shower Config</h1>
+    <h2>Wifi config</h2>
+    <h3>Access Point Config</h3>
+    <form action="/ap" method="POST" enctype="application/x-www-form-urlencoded">
+      <label>AP SSID: <input type="text" name="ap_ssid" placeholder="name of this controllers wifi"></label><br><br>
+      <label>AP PASSWORD: <input type="text" name="ap_pass" placeholder="Enter a password for this controllers wifi"></label><br><br>
+      <button type="submit">submit</button>
+    </form>
+    <h3>Station Config</h3>
+    <form action="/sta" method="POST" enctype="application/x-www-form-urlencoded">
+      <label>WiFi SSID: <input type="text" name="sta_ssid" placeholder="name of this controllers wifi"></label><br><br>
+      <label>WiFi PASSWORD: <input type="text" name="sta_pass" placeholder="Enter a password for this controllers wifi"></label><br><br>
+      <button type="submit">submit</button>
+    </form>
+    <h3>Image Config</h3>
+    <form action="/image" method="POST" enctype="application/x-www-form-urlencoded">
+      <label>image name: <input type="text" name="target" placeholder="image target from list"></label><br><br>
+      <button type="submit">submit</button>
+    </form>
+    <a href="/status">Check Connection Status</a>
+    <br><br>
+    <a href="/refresh">Click to refresh display manually</a>
+
+  </body>
+</html>
