@@ -1,1 +1,1 @@
-./data/images/jaws.csv
+./data/images/IMG_7756.csv
